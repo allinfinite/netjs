@@ -2,7 +2,7 @@ var shareSearchFocusUpdateMS = 1500;
 
 /* Sharetribe.com inspired view */
 function renderShare(v) {
-	var shareTags = [ 'Offer', 'Sell', 'Lend', 'Rent', 'Swap', 'GiveAway', 'Need', 'Teach', 'Learn' ];
+	var shareTags = [ 'Offer', 'Sell', 'Lend', 'Rent', 'Swap', 'Share', 'Need', 'Teach', 'Learn' ];
 	var shareCategories = ['Food', 'Services', 'Supplies' ];
 
     clearFocus();
@@ -54,11 +54,11 @@ function renderShare(v) {
 
 		var distCombo = $('<select>').appendTo(sidebar);
 		distCombo.append('<option>Anywhere</option>');
-		distCombo.append('<option>&lt; 0.25 km</option>');
-		distCombo.append('<option>&lt; 0.50 km</option>');
-		distCombo.append('<option>&lt; 1.00 km</option>');
-		distCombo.append('<option>&lt; 5.00 km</option>');
-		distCombo.append('<option>&lt; 10.00 km</option>');
+		distCombo.append('<option>&lt; 1 km</option>');
+		distCombo.append('<option>&lt; 5 km</option>');
+		distCombo.append('<option>&lt; 20 km</option>');
+		distCombo.append('<option>&lt; 50 km</option>');
+		distCombo.append('<option>&lt; 200 km</option>');
 	}
 
 	var content = newDiv().addClass('ShareContent').appendTo(frame);
